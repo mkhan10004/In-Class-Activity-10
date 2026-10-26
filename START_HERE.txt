@@ -1,0 +1,26 @@
+UNDERGRADUATE — CORE FORM + TASK A
+
+1. Install Flutter, Android SDK and Python 3.
+2. Open a terminal in this signup_app folder.
+3. Run: python tool/bootstrap.py
+4. Read README.md to choose instructor live mode or an allowed mock fallback.
+5. For permitted mock testing:
+   flutter run --dart-define=USE_MOCK=true
+6. Check:
+   dart format lib test
+   flutter analyze
+   flutter test --dart-define=USE_MOCK=true
+7. For permitted mock APK:
+   flutter build apk --release --dart-define=USE_MOCK=true
+8. APK: build/app/outputs/flutter-apk/app-release.apk
+
+For live mode replace the mock define with:
+--dart-define=AI_PROXY_URL=YOUR_INSTRUCTOR_HTTPS_ENDPOINT
+
+This ZIP contains generated application source and tests, not an APK.
+The bootstrap command creates the Android platform files using your Flutter SDK.
+Flutter compilation/tests and device checks still need to be performed locally.
+
+The instructor prohibits AI-written work. This package is explicitly marked as
+AI-generated reference material. Follow instructor guidance before submitting.
+Fill in your own reflections, actual contributions, partner name and evidence.
